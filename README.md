@@ -1,0 +1,1 @@
+- Fazer o clone do projeto coletaAtivoBolsa
