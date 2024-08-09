@@ -20,6 +20,8 @@ def enviar():
 
     options = Options()
     options.add_argument('--headless')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--no-sandbox')
 
     driver = webdriver.Edge(
         service=Service(EdgeChromiumDriverManager().install()),
@@ -76,4 +78,4 @@ def saida():
     return render_template('saida.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080,debug=True)
+    app.run(debug=True)
